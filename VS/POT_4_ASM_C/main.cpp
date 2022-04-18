@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Class.h"
 
 extern "C" {
     void asmMain();
@@ -6,10 +7,29 @@ extern "C" {
     int asmSum(int a, int b);
 }
 
+int sum(int a, int b)
+{
+    a = a + b;
+    return a;
+}
+
+int sum2(int* a, int b)
+{
+    *a = *a + b;
+}
+
+int sum3(int& a, int b)
+{
+    a = a + b;
+}
+
 int main()
 {
-    asmMain();
     int res = sum(1, 2);
+    sum2(&res, 5);
+    sum3(res, 5);
+
+    asmMain();
     res = asmSum(11, 22);
 
     _asm {
@@ -30,8 +50,5 @@ int main()
     }
 }
 
-int sum(int a, int b)
-{
-    int sum = a + b;
-    return sum;
-}
+
+

@@ -7,9 +7,11 @@
 [GENERAL_DATA]
 [BREAKPOINTS]
 [OPEN_WORKSPACE_FILES]
-"C:\Users\towggze\_dev\POT\HEW\POT_3_HEX_OUT\main.asm" 
+"C:\Users\towggze\_dev\KIV-POT\HEW\POT_3_HEX_OUT\main.asm" 
+"C:\Users\towggze\_dev\KIV-POT\HEW\POT_3_HEX_OUT\vects.c" 
 [WORKSPACE_FILE_STATES]
-"C:\Users\towggze\_dev\POT\HEW\POT_3_HEX_OUT\main.asm" -8 -31 1453 737 1 0 
+"C:\Users\towggze\_dev\KIV-POT\HEW\POT_3_HEX_OUT\main.asm" 0 0 1069 416 0 0 
+"C:\Users\towggze\_dev\KIV-POT\HEW\POT_3_HEX_OUT\vects.c" -8 -31 1453 799 1 1 
 [LOADED_PROJECTS]
 "POT_3_HEX_OUT" 
 [END]
