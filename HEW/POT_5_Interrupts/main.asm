@@ -6,12 +6,14 @@
 			
 		.data
 		
+LED:	.byte	0x00
 
-LED:    .byte	0x00
+txt1:   .ascii "Hello World!\n"      ; vypisovany text ukonceny \n
+buffer: .space 100                   ; vstupni buffer
 
-txt1:   .ascii "Hello World!\n" 
         .align 2                     ; zarovnani adresy
-out:    .long  txt1                  ; parametricky blok 1
+out:    .long txt1                   ; parametricky blok 1
+in:     .long buffer                 ; parametricky blok 2
 
 		.align	1			; zarovnani adresy
 		.space	100			; stack
@@ -22,30 +24,36 @@ stck:						; konec stacku + 1
 		.global _int1
 		.global _int2
 		
-_int1:  mov.b	@LED,r0l
-		rotl.b	r0l
+_int1:  push	er0
 		
-		cmp.b	#0x04,r0l
-		ble		lab1
+		mov.b	@LED,r0l
+		rotl.b	r0l
+		cmp		#0x05,r0l
+		blt		write
 		mov.b	#0x01,r0l
 		
-lab1:	mov.b	r0l,@LED
+write:	mov.b	r0l,@LED
+		
+		pop		er0
 		rts
 		
-_int2:  mov.w #PUTS,R0               ; 24bitovy PUTS
+_int2:	mov.w #PUTS,R0               ; 24bitovy PUTS
         mov.l #out,ER1               ; adr. param. bloku do ER1
         jsr   syscall
 		rts
-
+		
 _start:	mov.l	#stck,ER7
 
-	    mov.b	#0xff,r0l
+		mov.w	#0xff01,r0
+		mov.w	#0x3101,r1
+		add.w	r1,r0
+
+		mov.b	#0xff,r0l
 		mov.b	r0l,@LED
+		
 		mov.b	#0x01,r0l
 		mov.b	r0l,@LED
-				
-loop1:  nop
-		jmp		loop1
-		
-		sleep
+
+loop:	jmp		loop
+
 		.end
