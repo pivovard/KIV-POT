@@ -1,6 +1,5 @@
 # KIV-POT
-Vyukove materialy k predmetu KIV/POT. \
-https://courseware.zcu.cz/portal/studium/courseware/kiv/pot
+Vyukove materialy k predmetu [KIV/POT](https://courseware.zcu.cz/portal/studium/courseware/kiv/pot).
 
 
 ### Navody k prostredi HEW
