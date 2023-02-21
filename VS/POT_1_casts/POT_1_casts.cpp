@@ -110,6 +110,10 @@ void float_precision()
     printf("Float: %.0f + 1 = %.0f\n", f100, f100 + 1);
     printf("Double: %.0f + 1 = %.0f\n", d100, d100 + 1);
 
+    system("PAUSE");
+
+    printf("Float / 0 = %f\n", f100 / 0);
+
     SIZE(f100);
     SIZE(d100);
 }
@@ -125,17 +129,17 @@ void mem_storing()
 {
     Template var;
     SIZE(var.first)
-        SIZE(var.second)
-        system("PAUSE");
+    SIZE(var.second)
+    system("PAUSE");
     SIZE(var)
 }
 
 int main()
 {
-    //overflow_single_operation();
-    //overflow_multi_operation();
+    overflow_single_operation();
+    overflow_multi_operation();
     float_precision();
-    //mem_storing();
+    mem_storing();
 
     return 0;
 }
