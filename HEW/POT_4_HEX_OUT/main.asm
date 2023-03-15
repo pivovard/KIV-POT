@@ -1,16 +1,16 @@
 		.h8300s
 		
-		.equ	syscall,0x1FF0
+		.equ	syscall,0x1FF00
 		.equ	PUTS,0x0114
 		.equ	GETS,0x0113
 			
 		.data
 		
-var1:	.word	0x12CD
-var_out:.space	5			;pamet pro textovy vystup (4 znaky + \n)
+num:	.word	0x12CD
+num_c:	.space	5			;pamet pro textovy vystup (4 znaky + \n)
 
 		.align	2
-out:	.long	var_out		;param blok
+out:	.long	num_c		;param blok
 
 		.align	1			; zarovnani adresy
 		.space	100			; stack
@@ -21,8 +21,8 @@ stck:						; konec stacku + 1
 
 _start:	mov.l	#stck,ER7
 
-		mov.w	@var1,r0
-		mov.l	#var_out,er4	;adresa pameti pro vystup -> er4
+		mov.w	@num,r0
+		mov.l	#num_c,er4		;adresa pameti pro vystup -> er4
 		add.l	#0x04,er4		;posun adresy na posledni byte
 		
 		mov.b	#0x0A,r1l
@@ -32,7 +32,7 @@ _start:	mov.l	#stck,ER7
 		mov.b	#0x00,r5l		;pocitadlo cyklu
 		
 		;cyklus
-lab1:	mov.w	r0,r1
+loop:	mov.w	r0,r1
 		and.w	#0x000F,r1		;posledni 4 bity do r1
 		
 		cmp.w	#0x9,r1
@@ -48,7 +48,7 @@ cont:	mov.b	r1l,@er4		;ulozime prevedeny znak do pameti
 		
 		inc.b	r5l
 		cmp.b	#0x04,r5l
-		blt		lab1
+		blt		loop
 		
 		;vypis do konzole
 		mov.w	#PUTS,r0
