@@ -6,7 +6,11 @@ Vyukove materialy k predmetu [KIV/POT](https://courseware.zcu.cz/portal/studium/
 http://home.zcu.cz/~dudacek/EVB/kpit_gnu_simulator.htm
 
 ### Navody pro x86
+Popis x86 architektury: \
+https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture \
+Zakladni instrukce x86: \
 https://www.cs.virginia.edu/~evans/cs216/guides/x86.html \
+Volani C procedur \
 https://jeffpar.github.io/kbarchive/kb/073/Q73407/
 
 ### Ostatni
