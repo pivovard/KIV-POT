@@ -3,15 +3,15 @@
 [DATABASE_VERSION]
 "2.8" 
 [PROJECT_DETAILS]
-"POT_3_makra" "C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra" "C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\POT_3_makra.hwp" "H8S,H8/300" "KPIT GNUH8 [ELF]" "C Application" "2600" "Other" 
+"POT_5_Interrupts" "C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts" "C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\POT_5_Interrupts.hwp" "H8S,H8/300" "KPIT GNUH8 [ELF]" "C Application" "2600" "Other" 
 [INFORMATION]
 "No project information available" 
 [TOOL_CHAIN]
 "KPIT GNUH8 [ELF] Toolchain" "v11.02" 
 [CONFIGURATIONS]
-"Debug" "C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\Debug" 
-"Release" "C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\Release" 
-"SimDebug_H8S-2600A" "C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\SimDebug_H8S-2600A" 
+"Debug" "C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\Debug" 
+"Release" "C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\Release" 
+"SimDebug_H8S-2600A" "C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\SimDebug_H8S-2600A" 
 [BUILD_PHASES]
 "GNU Assembler" 1 
 "GNU Compiler" 1 
@@ -114,7 +114,7 @@
 [BUILD_FILE_ORDER_Preprocess Assembly file]
 "GNU Compiler" 1 
 [SCRAP]
-"Project Generator Setup File" "$(PROJDIR)\POT_3_makra.pgs" 
+"Project Generator Setup File" "$(PROJDIR)\POT_5_Interrupts.pgs" 
 [MAPPINGS]
 "Assembly source file" "GNU Assembler" "GNU Compiler" 
 "Object file" "GNU Linker" "GNU Assembler" 
@@ -122,9 +122,8 @@
 "Object file" "GNU Linker" "GNU Compiler" 
 "Object file" "GNU Linker" "GNU Compiler" 
 [PROJECT_FILES]
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\main.asm" "User" "Preprocess Assembly file" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\module1.asm" "User" "Preprocess Assembly file" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\vects.c" "User" "C source file" 2 
+"C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\main.asm" "User" "Preprocess Assembly file" 2 
+"C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\vects.c" "User" "C source file" 2 
 [FOLDER]
 "C header file" "C header file" 
 "C source file" "C source file" 
@@ -134,23 +133,22 @@
 [ON_DEMAND_COMPONENTS_LOADED]
 [SYNC_SESSION_NAMES]
 [SESSIONS]
-"DefaultSession" "C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\DefaultSession.hsf" 0 
-"SimSessionH8S-2600A" "C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\SimSessionH8S-2600A.hsf" 0 
+"DefaultSession" "C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\DefaultSession.hsf" 0 
+"SimSessionH8S-2600A" "C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\SimSessionH8S-2600A.hsf" 0 
 [GENERAL_DATA_SESSION_DefaultSession]
 [GENERAL_DATA_SESSION_SimSessionH8S-2600A]
 [OPTIONS_Debug_GNU Assembler]
-"Assembly source file" "0e1d933e7e738d10" 4 
+"Assembly source file" "0203d8d687358d10" 4 
 [OPTIONS_Debug_GNU Compiler]
-"C source file" "0e1d933e7e738d10" 3 
-"C++ source file" "0e1d933e7e738d10" 3 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\main.asm" "023123e09e738d10" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\module1.asm" "0df08a9eae738d10" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\vects.c" "0e1d933e7e738d10" 3 
-"Preprocess Assembly file" "0e1d933e7e738d10" 2 
+"C source file" "0203d8d687358d10" 3 
+"C++ source file" "0203d8d687358d10" 3 
+"C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\main.asm" "0cd3088097358d10" 2 
+"C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\vects.c" "0203d8d687358d10" 3 
+"Preprocess Assembly file" "0203d8d687358d10" 2 
 [OPTIONS_Debug_GNU Library Generator]
-"Single Shot" "0e1d933e7e738d10" 1 
+"Single Shot" "0203d8d687358d10" 1 
 [OPTIONS_Debug_GNU Linker]
-"Single Shot" "03af8a9eae738d10" 5 
+"Single Shot" "064c188097358d10" 5 
 [OPTIONS_Debug]
 "" 0 
 "[V|VERSION|2] [B|DOEXTF|1] [S|INCDIR|^"$(TCINSTALL)\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s^"|^"$(CONFIGDIR)^"] [B|RSARCH|1] [B|FIXUPLIBS|1] [S|ARCHIVE|lib$(PROJECTNAME).a*libgcc.a] [S|OUTFORM|DEFAULT] [B|MFILEGEN|1] [S|PLMFILE|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|OUTFILE|^"$(CONFIGDIR)\$(PROJECTNAME).x^"] [S|GROUPDET|.vects|0|0||1|0x00000000|0|1|0|.vects|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.text|0|0||1|0x00000400|0|0|0|.text|All-files|<<FEND>>|0|.text.*|All-files|<<FEND>>|1|etext|<<FEND>>|<<CEND>>|<<GEND>>|.init|0|0||0||0|0|0|.init|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.fini|0|0||0||0|0|0|.fini|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.got|0|0||0||0|0|0|.got|All-files|<<FEND>>|0|.got.plt|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.rodata|0|0||0||0|0|0|.rodata|All-files|<<FEND>>|0|.rodata.*|All-files|<<FEND>>|1|_erodata|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame_hdr|0|0||0||0|0|0|.eh_frame_hdr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame|0|0||0||0|0|0|.eh_frame|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.jcr|0|0||0||0|0|0|.jcr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.tors|0|0||0||0|0|1|__CTOR_LIST__|<<FEND>>|1|___ctors|<<FEND>>|0|.ctors|All-files|<<FEND>>|1|___ctors_end|<<FEND>>|1|__CTOR_END__|<<FEND>>|1|__DTOR_LIST__|<<FEND>>|1|___dtors|<<FEND>>|0|.dtors|All-files|<<FEND>>|1|___dtors_end|<<FEND>>|1|__DTOR_END__|<<FEND>>|1|_mdata|<<FEND>>|<<CEND>>|<<GEND>>|.data|0|0||1|0x00FF4000|0|0|1|_data|<<FEND>>|0|.data|All-files|<<FEND>>|0|.data.*|All-files|<<FEND>>|1|_edata|<<FEND>>|<<CEND>>|<<GEND>>|.gcc_exc|0|0||0||0|0|0|.gcc_exc|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.bss|0|0||0||0|0|1|_bss|<<FEND>>|0|.bss|All-files|<<FEND>>|0|.bss.*|All-files|<<FEND>>|0|COMMON|All-files|<<FEND>>|1|_ebss|<<FEND>>|1|_end|<<FEND>>|<<CEND>>|<<GEND>>|.stack|0|0||1|0x00FFC000|0|0|1|_stack|<<FEND>>|<<CEND>>|<<GEND>>|] [S|APPTXT|^"-e _start^"] [S|CPUTYPE|H8/S2600] [S|ENDIAN|BIG] [S|PROJECTTYPE|CAPPPROJECT] [B|DOOPTLIB|1] [B|DOPROJBUILT|1]
@@ -163,21 +161,20 @@
 [LINKAGE_ORDER_Debug]
 [GENERAL_DATA_CONFIGURATION_Debug]
 [OPTIONS_Release_GNU Assembler]
-"Assembly source file" "0e1d933e7e738d10" 3 
+"Assembly source file" "0203d8d687358d10" 3 
 [OPTIONS_Release_GNU Compiler]
-"C source file" "0e1d933e7e738d10" 2 
-"C++ source file" "0e1d933e7e738d10" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\main.asm" "023123e09e738d10" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\module1.asm" "0df08a9eae738d10" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\vects.c" "0e1d933e7e738d10" 2 
-"Preprocess Assembly file" "0e1d933e7e738d10" 2 
+"C source file" "0203d8d687358d10" 2 
+"C++ source file" "0203d8d687358d10" 2 
+"C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\main.asm" "0cd3088097358d10" 2 
+"C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\vects.c" "0203d8d687358d10" 2 
+"Preprocess Assembly file" "0203d8d687358d10" 2 
 [OPTIONS_Release_GNU Library Generator]
-"Single Shot" "0e1d933e7e738d10" 1 
+"Single Shot" "0203d8d687358d10" 1 
 [OPTIONS_Release_GNU Linker]
-"Single Shot" "03af8a9eae738d10" 4 
+"Single Shot" "064c188097358d10" 4 
 [OPTIONS_Release]
 "" 0 
-"[V|VERSION|2] [S|ENDIAN|BIG] [S|OUTFORM|BOTH] [B|MFILEGEN|1] [S|PLMFILE|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|APPTXT|^"-e _start^"] [S|OUTFILE|^"$(CONFIGDIR)\$(PROJECTNAME).x^"] [B|RSARCH|1] [B|OPTMEM|1] [B|ODEBSYM|1] [B|FIXUPLIBS|1] [B|SUBCOMMAND|0] [S|PROJECTTYPE|CAPPPROJECT] [S|CPUTYPE|H8/S2600] [B|DOOPTLIB|1] [B|DOPROJBUILT|1] [B|HMRELAX|0] [B|HMINT32|0] [S|ARCHIVE|libPOT_3_makra.a*libgcc.a] [S|INCDIR|^"$(TCINSTALL)\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s^"|^"$(CONFIGDIR)^"] [S|GROUPDET|.vects|0|0||1|0x00000000|0|1|0|.vects|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.text|0|0||1|0x00000400|0|0|0|.text|All-files|<<FEND>>|0|.text.*|All-files|<<FEND>>|1|etext|<<FEND>>|<<CEND>>|<<GEND>>|.init|0|0||0||0|0|0|.init|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.fini|0|0||0||0|0|0|.fini|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.got|0|0||0||0|0|0|.got|All-files|<<FEND>>|0|.got.plt|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.rodata|0|0||0||0|0|0|.rodata|All-files|<<FEND>>|0|.rodata.*|All-files|<<FEND>>|1|_erodata|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame_hdr|0|0||0||0|0|0|.eh_frame_hdr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame|0|0||0||0|0|0|.eh_frame|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.jcr|0|0||0||0|0|0|.jcr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.tors|0|0||0||0|0|1|__CTOR_LIST__|<<FEND>>|1|___ctors|<<FEND>>|0|.ctors|All-files|<<FEND>>|1|___ctors_end|<<FEND>>|1|__CTOR_END__|<<FEND>>|1|__DTOR_LIST__|<<FEND>>|1|___dtors|<<FEND>>|0|.dtors|All-files|<<FEND>>|1|___dtors_end|<<FEND>>|1|__DTOR_END__|<<FEND>>|1|_mdata|<<FEND>>|<<CEND>>|<<GEND>>|.data|0|2|_mdata|1|0x00FF4000|0|0|1|_data|<<FEND>>|0|.data|All-files|<<FEND>>|0|.data.*|All-files|<<FEND>>|1|_edata|<<FEND>>|<<CEND>>|<<GEND>>|.gcc_exc|0|0||0||0|0|0|.gcc_exc|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.bss|0|0||0||0|0|1|_bss|<<FEND>>|0|.bss|All-files|<<FEND>>|0|.bss.*|All-files|<<FEND>>|0|COMMON|All-files|<<FEND>>|1|_ebss|<<FEND>>|1|_end|<<FEND>>|<<CEND>>|<<GEND>>|.stack|0|0||1|0x00FFC000|0|0|1|_stack|<<FEND>>|<<CEND>>|<<GEND>>] " 4 
+"[V|VERSION|2] [S|ENDIAN|BIG] [S|OUTFORM|BOTH] [B|MFILEGEN|1] [S|PLMFILE|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|APPTXT|^"-e _start^"] [S|OUTFILE|^"$(CONFIGDIR)\$(PROJECTNAME).x^"] [B|RSARCH|1] [B|OPTMEM|1] [B|ODEBSYM|1] [B|FIXUPLIBS|1] [B|SUBCOMMAND|0] [S|PROJECTTYPE|CAPPPROJECT] [S|CPUTYPE|H8/S2600] [B|DOOPTLIB|1] [B|DOPROJBUILT|1] [B|HMRELAX|0] [B|HMINT32|0] [S|ARCHIVE|libPOT_5_Interrupts.a*libgcc.a] [S|INCDIR|^"$(TCINSTALL)\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s^"|^"$(CONFIGDIR)^"] [S|GROUPDET|.vects|0|0||1|0x00000000|0|1|0|.vects|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.text|0|0||1|0x00000400|0|0|0|.text|All-files|<<FEND>>|0|.text.*|All-files|<<FEND>>|1|etext|<<FEND>>|<<CEND>>|<<GEND>>|.init|0|0||0||0|0|0|.init|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.fini|0|0||0||0|0|0|.fini|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.got|0|0||0||0|0|0|.got|All-files|<<FEND>>|0|.got.plt|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.rodata|0|0||0||0|0|0|.rodata|All-files|<<FEND>>|0|.rodata.*|All-files|<<FEND>>|1|_erodata|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame_hdr|0|0||0||0|0|0|.eh_frame_hdr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame|0|0||0||0|0|0|.eh_frame|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.jcr|0|0||0||0|0|0|.jcr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.tors|0|0||0||0|0|1|__CTOR_LIST__|<<FEND>>|1|___ctors|<<FEND>>|0|.ctors|All-files|<<FEND>>|1|___ctors_end|<<FEND>>|1|__CTOR_END__|<<FEND>>|1|__DTOR_LIST__|<<FEND>>|1|___dtors|<<FEND>>|0|.dtors|All-files|<<FEND>>|1|___dtors_end|<<FEND>>|1|__DTOR_END__|<<FEND>>|1|_mdata|<<FEND>>|<<CEND>>|<<GEND>>|.data|0|2|_mdata|1|0x00FF4000|0|0|1|_data|<<FEND>>|0|.data|All-files|<<FEND>>|0|.data.*|All-files|<<FEND>>|1|_edata|<<FEND>>|<<CEND>>|<<GEND>>|.gcc_exc|0|0||0||0|0|0|.gcc_exc|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.bss|0|0||0||0|0|1|_bss|<<FEND>>|0|.bss|All-files|<<FEND>>|0|.bss.*|All-files|<<FEND>>|0|COMMON|All-files|<<FEND>>|1|_ebss|<<FEND>>|1|_end|<<FEND>>|<<CEND>>|<<GEND>>|.stack|0|0||1|0x00FFC000|0|0|1|_stack|<<FEND>>|<<CEND>>|<<GEND>>] " 4 
 "[V|VERSION|2] [S|ENDIAN|BIG] [S|OUTPUTPATH|^"$(CONFIGDIR)\lib$(PROJECTNAME).a^"] [B|OPTIMIZE|1] [I|OPTTYPE|1] [S|MODE|BUILD/CHANGED] [S|CPUTYPE|H8/S2600] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|DOPROJBUILT|1] [B|DOOPTLIB|1] [B|HMRELAX|0] [B|HMINT32|0] " 1 
 "[V|VERSION|2] [S|OBJPATH|^"$(CONFIGDIR)\$(FILELEAF).o^"] [S|ENDIAN|BIG] [I|DEBUGLV|0] [B|LINCHLS|1] [B|LINCASS|1] [B|LINCSYM|1] [S|LFILE|^"$(CONFIGDIR)\$(FILELEAF).^"] [S|PROJECTTYPE|CAPPPROJECT] [S|INCDIR|^"$(PROJDIR)^"] [S|CPUTYPE|H8/S2600] [S|CPU|2600A:24] " 3 
 "[V|VERSION|2] [S|OUTPUT|OBJECT] [S|ENDIAN|BIG] [S|OBJPATH|^"$(CONFIGDIR)\$(FILELEAF).o^"] [B|OPTIMIZE|1] [I|OPTLV|2] [B|DEBUG|0] [I|DEBUGLV|2] [S|DEBUGFT|Native] [S|DEFINES|RELEASE] [S|PROJECTTYPE|CAPPPROJECT] [S|CPUTYPE|H8/S2600] [S|CPU|2600A:24] [B|DOOPTLIB|1] [B|HMRELAX|0] [B|HMINT32|0] [S|INCDIR|^"$(TCINSTALL)\h8300-elf\h8300-elf\optlibinc^"|^"$(TCINSTALL)\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\optlibinc^"] [B|NOSTDINC|1] " 2 
@@ -185,21 +182,20 @@
 [LINKAGE_ORDER_Release]
 [GENERAL_DATA_CONFIGURATION_Release]
 [OPTIONS_SimDebug_H8S-2600A_GNU Assembler]
-"Assembly source file" "0e1d933e7e738d10" 3 
+"Assembly source file" "0203d8d687358d10" 3 
 [OPTIONS_SimDebug_H8S-2600A_GNU Compiler]
-"C source file" "0e1d933e7e738d10" 2 
-"C++ source file" "0e1d933e7e738d10" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\main.asm" "023123e09e738d10" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\module1.asm" "0df08a9eae738d10" 2 
-"C:\Users\david.pivovar\_dev\KIV-POT\HEW\POT_3_makra\vects.c" "0e1d933e7e738d10" 2 
-"Preprocess Assembly file" "0e1d933e7e738d10" 2 
+"C source file" "0203d8d687358d10" 2 
+"C++ source file" "0203d8d687358d10" 2 
+"C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\main.asm" "0cd3088097358d10" 2 
+"C:\Users\david.pivovar\_dev\KIV-POT\H8S\POT_5_Interrupts\vects.c" "0203d8d687358d10" 2 
+"Preprocess Assembly file" "0203d8d687358d10" 2 
 [OPTIONS_SimDebug_H8S-2600A_GNU Library Generator]
-"Single Shot" "0e1d933e7e738d10" 1 
+"Single Shot" "0203d8d687358d10" 1 
 [OPTIONS_SimDebug_H8S-2600A_GNU Linker]
-"Single Shot" "03af8a9eae738d10" 4 
+"Single Shot" "064c188097358d10" 4 
 [OPTIONS_SimDebug_H8S-2600A]
 "" 0 
-"[V|VERSION|2] [S|ENDIAN|BIG] [S|OUTFORM|BOTH] [B|MFILEGEN|1] [S|PLMFILE|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|APPTXT|^"-e _start^"] [S|OUTFILE|^"$(CONFIGDIR)\$(PROJECTNAME).x^"] [B|RSARCH|1] [B|FIXUPLIBS|1] [B|SUBCOMMAND|0] [S|PROJECTTYPE|CAPPPROJECT] [S|CPUTYPE|H8/S2600] [B|DOOPTLIB|1] [B|DOPROJBUILT|1] [B|HMRELAX|0] [B|HMINT32|0] [S|ARCHIVE|libPOT_3_makra.a*libgcc.a] [S|INCDIR|^"$(TCINSTALL)\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s^"|^"$(CONFIGDIR)^"] [S|GROUPDET|.vects|0|0||1|0x00000000|0|1|0|.vects|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.text|0|0||1|0x00000400|0|0|0|.text|All-files|<<FEND>>|0|.text.*|All-files|<<FEND>>|1|etext|<<FEND>>|<<CEND>>|<<GEND>>|.init|0|0||0||0|0|0|.init|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.fini|0|0||0||0|0|0|.fini|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.got|0|0||0||0|0|0|.got|All-files|<<FEND>>|0|.got.plt|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.rodata|0|0||0||0|0|0|.rodata|All-files|<<FEND>>|0|.rodata.*|All-files|<<FEND>>|1|_erodata|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame_hdr|0|0||0||0|0|0|.eh_frame_hdr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame|0|0||0||0|0|0|.eh_frame|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.jcr|0|0||0||0|0|0|.jcr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.tors|0|0||0||0|0|1|__CTOR_LIST__|<<FEND>>|1|___ctors|<<FEND>>|0|.ctors|All-files|<<FEND>>|1|___ctors_end|<<FEND>>|1|__CTOR_END__|<<FEND>>|1|__DTOR_LIST__|<<FEND>>|1|___dtors|<<FEND>>|0|.dtors|All-files|<<FEND>>|1|___dtors_end|<<FEND>>|1|__DTOR_END__|<<FEND>>|1|_mdata|<<FEND>>|<<CEND>>|<<GEND>>|.data|0|2|_mdata|1|0x00FF4000|0|0|1|_data|<<FEND>>|0|.data|All-files|<<FEND>>|0|.data.*|All-files|<<FEND>>|1|_edata|<<FEND>>|<<CEND>>|<<GEND>>|.gcc_exc|0|0||0||0|0|0|.gcc_exc|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.bss|0|0||0||0|0|1|_bss|<<FEND>>|0|.bss|All-files|<<FEND>>|0|.bss.*|All-files|<<FEND>>|0|COMMON|All-files|<<FEND>>|1|_ebss|<<FEND>>|1|_end|<<FEND>>|<<CEND>>|<<GEND>>|.stack|0|0||1|0x00FFC000|0|0|1|_stack|<<FEND>>|<<CEND>>|<<GEND>>] " 4 
+"[V|VERSION|2] [S|ENDIAN|BIG] [S|OUTFORM|BOTH] [B|MFILEGEN|1] [S|PLMFILE|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|APPTXT|^"-e _start^"] [S|OUTFILE|^"$(CONFIGDIR)\$(PROJECTNAME).x^"] [B|RSARCH|1] [B|FIXUPLIBS|1] [B|SUBCOMMAND|0] [S|PROJECTTYPE|CAPPPROJECT] [S|CPUTYPE|H8/S2600] [B|DOOPTLIB|1] [B|DOPROJBUILT|1] [B|HMRELAX|0] [B|HMINT32|0] [S|ARCHIVE|libPOT_5_Interrupts.a*libgcc.a] [S|INCDIR|^"$(TCINSTALL)\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s^"|^"$(CONFIGDIR)^"] [S|GROUPDET|.vects|0|0||1|0x00000000|0|1|0|.vects|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.text|0|0||1|0x00000400|0|0|0|.text|All-files|<<FEND>>|0|.text.*|All-files|<<FEND>>|1|etext|<<FEND>>|<<CEND>>|<<GEND>>|.init|0|0||0||0|0|0|.init|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.fini|0|0||0||0|0|0|.fini|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.got|0|0||0||0|0|0|.got|All-files|<<FEND>>|0|.got.plt|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.rodata|0|0||0||0|0|0|.rodata|All-files|<<FEND>>|0|.rodata.*|All-files|<<FEND>>|1|_erodata|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame_hdr|0|0||0||0|0|0|.eh_frame_hdr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.eh_frame|0|0||0||0|0|0|.eh_frame|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.jcr|0|0||0||0|0|0|.jcr|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.tors|0|0||0||0|0|1|__CTOR_LIST__|<<FEND>>|1|___ctors|<<FEND>>|0|.ctors|All-files|<<FEND>>|1|___ctors_end|<<FEND>>|1|__CTOR_END__|<<FEND>>|1|__DTOR_LIST__|<<FEND>>|1|___dtors|<<FEND>>|0|.dtors|All-files|<<FEND>>|1|___dtors_end|<<FEND>>|1|__DTOR_END__|<<FEND>>|1|_mdata|<<FEND>>|<<CEND>>|<<GEND>>|.data|0|2|_mdata|1|0x00FF4000|0|0|1|_data|<<FEND>>|0|.data|All-files|<<FEND>>|0|.data.*|All-files|<<FEND>>|1|_edata|<<FEND>>|<<CEND>>|<<GEND>>|.gcc_exc|0|0||0||0|0|0|.gcc_exc|All-files|<<FEND>>|<<CEND>>|<<GEND>>|.bss|0|0||0||0|0|1|_bss|<<FEND>>|0|.bss|All-files|<<FEND>>|0|.bss.*|All-files|<<FEND>>|0|COMMON|All-files|<<FEND>>|1|_ebss|<<FEND>>|1|_end|<<FEND>>|<<CEND>>|<<GEND>>|.stack|0|0||1|0x00FFC000|0|0|1|_stack|<<FEND>>|<<CEND>>|<<GEND>>] " 4 
 "[V|VERSION|2] [S|ENDIAN|BIG] [S|OUTPUTPATH|^"$(CONFIGDIR)\lib$(PROJECTNAME).a^"] [B|OPTIMIZE|1] [I|OPTTYPE|1] [S|MODE|BUILD/CHANGED] [S|CPUTYPE|H8/S2600] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|DOPROJBUILT|1] [B|DOOPTLIB|1] [B|HMRELAX|0] [B|HMINT32|0] " 1 
 "[V|VERSION|2] [S|OBJPATH|^"$(CONFIGDIR)\$(FILELEAF).o^"] [S|ENDIAN|BIG] [I|DEBUGLV|2] [B|LINCHLS|1] [B|LINCASS|1] [B|LINCSYM|1] [S|LFILE|^"$(CONFIGDIR)\$(FILELEAF).^"] [S|PROJECTTYPE|CAPPPROJECT] [S|INCDIR|^"$(PROJDIR)^"] [S|CPUTYPE|H8/S2600] [S|CPU|2600A:24] " 3 
 "[V|VERSION|2] [S|OUTPUT|OBJECT] [S|ENDIAN|BIG] [S|OBJPATH|^"$(CONFIGDIR)\$(FILELEAF).o^"] [B|OPTIMIZE|0] [I|OPTLV|2] [B|DEBUG|1] [I|DEBUGLV|2] [S|DEBUGFT|Native] [S|DEFINES|DEBUG] [S|PROJECTTYPE|CAPPPROJECT] [S|CPUTYPE|H8/S2600] [S|CPU|2600A:24] [B|DOOPTLIB|1] [B|HMRELAX|0] [B|HMINT32|0] [S|INCDIR|^"$(TCINSTALL)\h8300-elf\h8300-elf\optlibinc^"|^"$(TCINSTALL)\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\optlibinc^"] [B|NOSTDINC|1] " 2 
