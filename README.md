@@ -20,7 +20,7 @@ http://home.zcu.cz/~dudacek/EVB/kpit_gnu_simulator.htm
 
 ### Navody pro x86
 Nasteveni projektu ve VS:
-- Project -> Build Customizations... -> masm
+- Project -> Build Dependencies -> Build Customizations... -> masm
 - Project -> Properties -> Custom Build Step -> Command line: **`/DYNAMICBASE:NO`**
 - Build -> Configuration Manager -> Platform: x86 (Win32)
 - Add new .asm file -> Properties -> Item Type: Microsoft Macro Assembler

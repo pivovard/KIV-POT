@@ -14,12 +14,12 @@ msg     db  "Hello World"
 .code
 main proc c
 
-    mov     aex,2
+    mov     eax,2
     movzx   eax,word ptr [var1]     ;presune hodntu na adrese var1 - mov.w @var1,eax
     mov     [var2],0Ah              ;lze zapisovat const rovnou do pameti
     lea     esi,arr                 ;presune adresu arr do esi     - mov.l #var2,esi  
     movzx   eax,byte ptr [ebx]      ;movzx = zero extension
-    mov	    [esi+4],85h             ;na 5. pozici pole ulozi 85h
+    mov	    byte ptr [esi+4],85h             ;na 5. pozici pole ulozi 85h
 
 ;cyklus
     mov	ecx,10
