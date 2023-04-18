@@ -15,6 +15,8 @@ Vyukove materialy k predmetu [KIV/POT](https://courseware.zcu.cz/portal/studium/
 11. Zapoctovy test (prace s cisly, dekodovani adres)
 12. Konzultacni cviceni, odevzdani SP
 
+(plan cviceni je pouze orientacni a muze se v prubehu semestru menit)
+
 ### Navody k prostredi HEW
 http://home.zcu.cz/~dudacek/EVB/kpit_gnu_simulator.htm
 
@@ -26,9 +28,11 @@ Nasteveni projektu ve VS:
 - Add new .asm file -> Properties -> Item Type: Microsoft Macro Assembler
 
 Popis x86 architektury: \
-https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture \
+https://en.wikibooks.org/wiki/X86_Assembly \
 Zakladni instrukce x86: \
 https://www.cs.virginia.edu/~evans/cs216/guides/x86.html \
+Kompletni instrukcni set: \
+https://docs.oracle.com/cd/E18752_01/html/817-5477/enmzx.html \
 Volani C procedur \
 https://jeffpar.github.io/kbarchive/kb/073/Q73407/
 
