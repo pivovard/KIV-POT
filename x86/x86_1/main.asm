@@ -1,6 +1,6 @@
 .386
 .model  flat,stdcall
-.stack  4096
+.stack  1024
 ExitProcess proto,dwExitCode:dword
 
 
@@ -17,9 +17,13 @@ main proc c
     mov     eax,2
     movzx   eax,word ptr [var1]     ;presune hodntu na adrese var1 - mov.w @var1,eax
     mov     [var2],0Ah              ;lze zapisovat const rovnou do pameti
-    lea     esi,arr                 ;presune adresu arr do esi     - mov.l #var2,esi  
-    movzx   eax,byte ptr [ebx]      ;movzx = zero extension
-    mov	    byte ptr [esi+4],85h             ;na 5. pozici pole ulozi 85h
+    lea     esi,arr                 ;nacte adresu arr do esi     - mov.l #var2,esi
+    movzx   eax,byte ptr [esi]      ;movzx = zero extension
+    mov	    byte ptr [esi+4],85h    ;na 5. pozici pole ulozi 85h
+
+    mov     ebx,OFFSET arr          ;stejna funkce jako lea
+    mov     ecx,LENGTH arr          ;delka
+
 
 ;cyklus
     mov	ecx,10
