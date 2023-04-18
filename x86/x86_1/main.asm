@@ -8,7 +8,7 @@ ExitProcess proto,dwExitCode:dword
 var1    dd  1234h
 var2    dw  0abcdh
 arr		db	10 DUP(1)
-msg     db  "Hello World"
+msg     db  "Hello World",0
 
 
 .code
