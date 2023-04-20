@@ -37,4 +37,5 @@ Volani C procedur \
 https://jeffpar.github.io/kbarchive/kb/073/Q73407/
 
 ### Ostatni
+[Floating point converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html) \
 [Video](https://www.youtube.com/watch?v=ExwqNreocpg), jak lze zmensit velikost aplikace za pouziti assembly anebo nastaveni kompilatoru tak, ze se vejde do velmi male pameti jakou ma napriklad QR kod.
