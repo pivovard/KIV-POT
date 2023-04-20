@@ -1,13 +1,19 @@
 #include <iostream>
-#include "Class.h"
+
+char msg[] = "Hello world!\n";
 
 extern "C" {
-    void asmMain();
-    int sum(int a, int b);
-    int asmSum(int a, int b);
+    void proc_asm();
+    int sum_asm(int a, int b);
+    void myprint();
+    int sum1(int a, int b);
 }
 
-int sum(int a, int b)
+void myprint() {
+    std::cout << msg;
+}
+
+int sum1(int a, int b)
 {
     a = a + b;
     return a;
@@ -16,38 +22,43 @@ int sum(int a, int b)
 int sum2(int* a, int b)
 {
     *a = *a + b;
+    return *a;
 }
 
 int sum3(int& a, int b)
 {
     a = a + b;
+    return a;
 }
 
 int main()
 {
-    int res = sum(1, 2);
+    proc_asm();
+
+    int res = sum1(1, 2);
+    res = sum_asm(11, 22);
+
     sum2(&res, 5);
     sum3(res, 5);
-
-    asmMain();
-    res = asmSum(11, 22);
 
     _asm {
         push  5
         push  7
-        call  sum
+        call  sum1
         mov   dword ptr [res], eax
+        pop edx
+        pop edx
     }
-
-    char msg[] = "Hello world!\n";
 
     __asm
     {
         lea  eax, msg
         push eax
         call printf
-        pop  ebx
+        pop  edx
     }
+
+    return 0;
 }
 
 
