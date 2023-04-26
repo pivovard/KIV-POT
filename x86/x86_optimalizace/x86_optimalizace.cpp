@@ -55,16 +55,16 @@ int main()
 
 	_asm {
 		mov ecx, 0
-		mov edi, arr1
-		mov esi, arr2
-		loop1 :
+		mov edi, [arr1]
+		mov esi, [arr2]
+	loop1 :
 		mov eax, [edi + 4 * ecx]
-			mov ebx, [esi + 4 * ecx]
-			imul eax, ebx
-			mov[edi + 4 * ecx], eax
-			add ecx, 1
-			cmp ecx, SIZE
-			jl loop1
+		mov ebx, [esi + 4 * ecx]
+		imul eax, ebx
+		mov[edi + 4 * ecx], eax
+		inc ecx
+		cmp ecx, SIZE
+		jl loop1
 	}
 
 	end = std::chrono::high_resolution_clock::now();
