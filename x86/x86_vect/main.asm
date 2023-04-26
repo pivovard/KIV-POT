@@ -6,18 +6,17 @@
 
 .data
 
-arr1	dw	100 DUP(2)
-arr2	dw	100 DUP(3)
+arr1	dw	16 DUP(1)
+num1	dw	1, 2, 3, 4, 5, 6, 7, 8
 
 .code
 main PROC
-	lea esi,arr1
-	lea edi,arr2
-	movups      xmm0, xmmword ptr[esi]
-	movups      xmm1, xmmword ptr[edi]
+	lea			eax,arr1
+	movups      xmm0, xmmword ptr[eax+4*2]
+	movups      xmm1, xmmword ptr[num1]
 	addps		xmm0, xmm1
-	movdqa [edi + 4 * ecx], xmm0
-
+	movups		xmmword ptr [eax+8], xmm0 ;in memory: {1,1,1,1,2,3,4,5,6,7,8,9,1,1,1,1}
+	
 	invoke ExitProcess, 0
 main ENDP
 
