@@ -31,10 +31,14 @@ Popis x86 architektury: \
 https://en.wikibooks.org/wiki/X86_Assembly \
 Zakladni instrukce x86: \
 https://www.cs.virginia.edu/~evans/cs216/guides/x86.html \
+SSE instrukce: \
+https://students.mimuw.edu.pl/~zbyszek/asm/en/instrukcje-sse.html \
 Kompletni instrukcni set: \
 https://docs.oracle.com/cd/E18752_01/html/817-5477/enmzx.html \
 Volani C procedur \
-https://jeffpar.github.io/kbarchive/kb/073/Q73407/
+https://jeffpar.github.io/kbarchive/kb/073/Q73407/ \
+WinAPI: \
+https://learn.microsoft.com/en-us/windows/console/getstdhandle
 
 ### Ostatni
 [Floating point converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html) \
