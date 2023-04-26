@@ -54,17 +54,17 @@ int main()
 	start = std::chrono::high_resolution_clock::now();
 
 	_asm {
-		mov ecx, 0
-		mov edi, [arr1]
-		mov esi, [arr2]
+		mov  ecx, 0
+		mov  esi, [arr1]
+		mov  edi, [arr2]
 	loop1 :
-		mov eax, [edi + 4 * ecx]
-		mov ebx, [esi + 4 * ecx]
+		mov  eax, [esi + 4 * ecx]
+		mov  ebx, [edi + 4 * ecx]
 		imul eax, ebx
-		mov[edi + 4 * ecx], eax
-		inc ecx
-		cmp ecx, SIZE
-		jl loop1
+		mov  [esi + 4 * ecx], eax
+		inc  ecx
+		cmp  ecx, SIZE
+		jl   loop1
 	}
 
 	end = std::chrono::high_resolution_clock::now();
@@ -72,18 +72,18 @@ int main()
 	std::cout << "3. " << duration.count() << std::endl;
 
 	// vektorove funkce
-	/*init(arr1, arr2);
+	init(arr1, arr2);
 	start = std::chrono::high_resolution_clock::now();
 
 	_asm {
 		mov ecx, 0
-		lea edi, arr1
-		lea esi, arr2
+		mov esi, [arr1]
+		mov edi, [arr2]
 	loop2 :
-		movups      xmm0, xmmword ptr[edi + 4 * ecx]
-		movups      xmm1, xmmword ptr[esi + 4 * ecx]
-		mulps xmm0, xmm1
-		movdqa [edi + 4 * ecx], xmm0
+		movups      xmm0, xmmword ptr[esi + 4 * ecx]
+		movups      xmm1, xmmword ptr[edi + 4 * ecx]
+		mulps		xmm0, xmm1
+		movups      xmmword ptr[edi + 4 * ecx], xmm0
 		add ecx, 4
 		cmp ecx, SIZE
 		jl loop2
@@ -91,7 +91,7 @@ int main()
 
 	end = std::chrono::high_resolution_clock::now();
 	duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
-	std::cout << "4. " << duration.count() << std::endl;*/
+	std::cout << "4. " << duration.count() << std::endl;
 
 	delete[] arr1;
 	delete[] arr2;
