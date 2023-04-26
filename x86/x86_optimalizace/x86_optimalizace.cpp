@@ -12,16 +12,19 @@ void init(int* arr1, int* arr2) {
 	}
 }
 
-void runOd() {
+int main()
+{
 	int* arr1 = new int[SIZE];
 	int* arr2 = new int[SIZE];
 
-	// bez optimalizace \Od
+	// bez optimalizace /Od	-> general purpose registry
+	// optimalizovany   /O2 -> SSE registry
 	init(arr1, arr2);
 	auto start = std::chrono::high_resolution_clock::now();
 
 	for (int i = 0; i < SIZE; i++)
 	{
+		//if(arr1[i] % 2 == 0) //podminka rozbije optimalizaci
 		arr1[i] = arr1[i] * arr2[i];
 	}
 
@@ -92,36 +95,5 @@ void runOd() {
 
 	delete[] arr1;
 	delete[] arr2;
-}
-
-// optimalizace /O2
-void runO2() {
-	int* arr1 = new int[SIZE];
-	float* arr2 = new float[SIZE];
-	for (int i = 0; i < SIZE; i++) {
-		arr1[i] = i;
-		arr2[i] = i;
-	}
-
-	for (int i = 0; i < SIZE; i++)
-	{
-		arr1[i] = arr1[i] * arr2[i];
-	}
-
-	int result = 0;;
-	for (int i = 0; i < SIZE; i++)
-	{
-		result += arr1[i] * arr2[i];
-	}
-	std::cout << result << std::endl;
-
-	delete[] arr1;
-	delete[] arr2;
-}
-
-int main()
-{
-	runOd();
-	//runO2();
 	return 0;
 }
